@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mital - Prework Assignment 2</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0; width=device-width">
+    <link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="app.js">
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1><b><u>TIP CALCULATOR</u></b></h1>
+		<div class="wrapper">
+			<p><b>Bill Amount:</b></p>
+			<input type="text" id="amount" placeholder="Amount to be paid" value="100"> $
+			<p><b>TIP selection :</b></p>
+			<select id="services">
+				<option selected disabled hidden>
+					Select Tip Percentage:
+				</option>
+				<option value="0.30">30% </option>
+				<option value="0.20">20% </option>
+				<option value="0.18" selected>18% </option>
+				<option value="0.10">10% </option>
+				<option value="0.05">5% </option>
+			</select>
+			<button id="calculate"><b>Calculate</b></button>
+		</div>
+		<div class="tip">
+			<p><b>You should Tip:</b></p>
+			<b><span id="total">0</span>$ on <span id="amount1">0</span>$</b>
+		</div>
+	</div>
+</body>
+</html>

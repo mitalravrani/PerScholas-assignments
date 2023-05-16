@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    color: #f5f0f0;
+}
+.holy-grail header,.holy-grail footer, .hg-sidebar,.holy-grail-content {
+    padding: 20px;
+}
+.holy-grail header, .holy-grail footer {
+    background: #0a77eb;
+}
+.hg-sidebar {
+    background: #99caf5;
+}
+.holy-grail-content {
+    color: #141515;
+}
+
+/**
+ * Flex things:  — Mobile first  — Responsive
+ * Make body at least 100% height
+ * You can also use a combination  of height: 100% in <html> and  min-height: 100% in <body>.
+ */
+ .holy-grail {
+    min-height: 100vh;
+}
+
+ /**
+ * Let's do a column distribution  (mobile first)
+ * flex value is 1 1 auto to make  body skrinkable and extensible
+ */
+.holy-grail, .holy-grail-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+ /**  Content body item is made  extensible too. */
+.holy-grail-content {
+    flex: 1 1 auto;
+}
+
+ /**  Let's introduce bigger screen  */
+@media (min-width: 768px) {
+    /**
+    * Put the first sidebar before content.
+    * If you need sidebar to be before content only in big screen put those 3 next lines in @media block.
+    */
+    .holy-grail-sidebar-1 {
+        order: -1;
+    }
+   	/** Body items are now side by side */
+    .holy-grail-body {
+        flex-direction: row;
+    }
+	/** Sidebars have a basic 260 width and are not really flexible anymore */
+    .hg-sidebar {
+        flex: 0 0 260px;
+    }
+}
+
+
+
+
