@@ -1,0 +1,31 @@
+body{
+    padding-left: 25%;
+    }
+    .container{
+      width: 75%;
+      height: 800px;
+      background-color: lightblue;
+    }
+    .heading{
+      background-color: lightcoral;
+      height: 75px;
+    }
+    .mid-section{
+      display: flex;
+      flex-direction: row;
+    }
+    .lower-section{
+      display: flex;
+      flex-direction: row;
+     margin-top: 10px;
+    }
+    .first-box,.second-box,.fourth-box,.fifth-box,.third-box,.sixth-box{
+      background-color: lightpink;
+     flex: 1;
+     height:300px ;
+     margin-right: 10px;
+     border: 1px solid black;
+    }
+    .first-box,.second-box,.fourth-box,.fifth-box{
+      margin-right: 10px;
+     }
