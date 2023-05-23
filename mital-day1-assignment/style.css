@@ -1,0 +1,32 @@
+.navContainer {
+    border: solid gray;
+    background-color: lightgray;
+    height: 50px;
+  }
+
+  .titleContainer{
+    border:solid rgb(245, 171, 171);
+    background-color: lightgoldenrodyellow;
+}
+  .picture {
+     border: black;
+     height: 250px;
+     width: 400px;
+  }
+   .buttonContainer{
+    border:solid rgb(245, 171, 171);
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+
+   }
+.boxContainer{
+    border:solid rgb(245, 171, 171);
+    background-color: rgb(220, 229, 239);
+    height:100px;
+}
+​
+.section{
+    border:solid purple;
+    margin:1em;
+    display:flex;
+}
